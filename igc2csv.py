@@ -139,7 +139,7 @@ def igc_to_csv(igc_file, csv_file_b=None, csv_file_k=None):
                 hh, mm, ss = int(time[:2]), int(time[2:4]), int(time[4:6])
                 dt = datetime.combine(current_date, datetime.min.time()).replace(hour=hh, minute=mm, second=ss)
 
-                if last_time and dt <= last_time:
+                if last_time and dt < last_time:
                     current_date += timedelta(days=1)
                     dt = datetime.combine(current_date, datetime.min.time()).replace(hour=hh, minute=mm, second=ss)
 
@@ -165,7 +165,7 @@ def igc_to_csv(igc_file, csv_file_b=None, csv_file_k=None):
                 hh, mm, ss = int(time[:2]), int(time[2:4]), int(time[4:6])
                 dt = datetime.combine(current_date, datetime.min.time()).replace(hour=hh, minute=mm, second=ss)
 
-                if last_time and dt <= last_time:
+                if last_time and dt < last_time:
                     current_date += timedelta(days=1)
                     dt = datetime.combine(current_date, datetime.min.time()).replace(hour=hh, minute=mm, second=ss)
 
