@@ -28,4 +28,5 @@ flight, while watching and listening retrospectively. Things I'm looking for inc
 symbols saying when I think I'm following a convergence; or when the sun is on one side of a ridge but the 
 wind is on the other, can the wind arrows help me choose the best place to fly? 
 
-![Example] (./images/2025-03-09_Example.jpg)
+![Example of overlaid data on a video frame](./images/2025-03-09_Example.jpg)
+**Example of a video frame with overlaid data from an IGC file**
